@@ -17,5 +17,5 @@
 *.pdb
 *.exe
 *.pdb
-1-Semester-OPRG/x64/Debug/_IsIncrementalBuild
-
+*x64
+*X64
