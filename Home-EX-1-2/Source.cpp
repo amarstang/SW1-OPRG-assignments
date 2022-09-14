@@ -1,3 +1,8 @@
+//Written by Niels Jakob
+//Software Teknologi 1 semester
+//Date 2022/9/14 (yyyy/mm/dd)
+
+
 //Write a program that can calculate the average of 3 whole numbers
 
 

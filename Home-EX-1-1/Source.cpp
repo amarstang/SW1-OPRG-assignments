@@ -1,4 +1,9 @@
-//Write a program that can turn EURO into DKK and write it out
+//Written by Niels Jakob
+//Software Teknologi 1 semester
+//Date 2022/9/14 (yyyy/mm/dd)
+
+
+//Write a program that can convert EURO into DKK and write it out
 
 
 //Danish:
