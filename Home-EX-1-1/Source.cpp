@@ -28,4 +28,5 @@ int main(void) {
 	DKK_Out = euroInput * conversionRate;
 	printf_s("\nImputed euro: %f\nDKK out: %f\nConversion rate: %f\n\n", euroInput, DKK_Out, conversionRate);
 
+	return 0;
 }

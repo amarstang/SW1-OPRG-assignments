@@ -75,5 +75,5 @@ int main(void) {
 	cout << "log10(5) = " << log10(5) << endl;
 
 
-
+	return 0;
 }

@@ -15,4 +15,5 @@ int main(void){
 	printf_s("\n\nPythagoras A^2 + B^2 = C^2");
 	printf_s("\n A: %f\n B: %f\n C: %f\n\n",a,b,c);
 
+	return 0;
 }

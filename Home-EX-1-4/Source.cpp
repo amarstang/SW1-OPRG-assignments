@@ -42,4 +42,6 @@ int main(void) {
 	{
 		printf_s("Negative age...");
 	}//end of Extra
+
+	return 0;
 }

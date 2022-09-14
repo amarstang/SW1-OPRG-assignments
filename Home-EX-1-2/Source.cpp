@@ -37,4 +37,5 @@ int main(void) {
 
 	printf_s("\n\nFirst number: %d\nSecond number: %d\nThrid number: %d\nAverage value: %f",num1,num2,num3,averageValue);
 
+	return 0;
 }

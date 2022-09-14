@@ -23,4 +23,5 @@ int main(void) {
 		printf_s("\n%f", Req);
 	}
 
+	return 0;
 }

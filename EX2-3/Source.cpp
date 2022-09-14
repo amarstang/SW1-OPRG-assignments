@@ -21,4 +21,5 @@ int main(void) {
 	//Outputs the replacement resistance to the user
 	printf_s("\n%f", Req);
 
+	return 0;
 }
