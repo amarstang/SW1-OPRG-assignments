@@ -2,6 +2,10 @@
 //Software Teknologi 1 semester
 //Date 2022/9/14 (yyyy/mm/dd)
 
+
+//Danish
+//Skriv et program som kan indlæse et tal fra brugeren og derefter udskrive kvadratroden af dette tal.
+
 #include <stdio.h>
 #include <math.h>
 
