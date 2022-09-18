@@ -40,14 +40,17 @@ int main(void) {
 
 	}
 
-	////Calc the roots of an parable with (-B+-sqrt(D))/2*A
-	//x1 = (-B + (pow(B, 2) - (4 * A * C))) / (2 * A);
-	//x2 = (-B - (pow(B, 2) - (4 * A * C))) / (2 * A);
-	
-
-	//Print the Calc values of the roots to the user
-	printf_s("\n\nUsing\n A: %f\n B: %f\n C: %f\n D: %f\n Root1: %f\n Root2: %f", A, B, C, x3, x1, x2);
-
+	printf_s("\n\n A: %f\n B: %f\n C: %f\n D: %f\n", A, B, C, x3);
+	if (x3 != 0)
+	{
+		printf_s("\nRoot 1: %f", x1);
+		printf_s("\nRoot 2: %f", x2);
+	}
+	else
+	{
+		printf_s("\nRoot 1: %f", x1);
+	}
+	printf_s("\n");
 
 
 	return 0;
