@@ -20,10 +20,30 @@ int main(void) {
 	//Reads user input for numbers
 	scanf_s("%f %f %f", &A, &B, &C);
 
-	//Calc the roots of an parable with (-B+-sqrt(D))/2*A
-	x1 = (-B + (pow(B, 2) - (4 * A * C))) / (2 * A);
-	x2 = (-B - (pow(B, 2) - (4 * A * C))) / (2 * A);
-	x3 = pow(B, 2) - 4 * A * C;
+	x3 = B * B - 4 * A * C;
+
+
+	if (x3 > 0)
+	{
+		x1 = (-B + sqrt(x3)) / (2 * A);
+		x2 = (-B - sqrt(x3)) / (2 * A);
+
+	}
+	else if (x3 == 0)
+	{
+		x1 = -B / (2 * A);
+	}
+	else
+	{
+		x1 = -B / (2 * A);
+		x2 = sqrt(-x3) / (2 * A);
+
+	}
+
+	////Calc the roots of an parable with (-B+-sqrt(D))/2*A
+	//x1 = (-B + (pow(B, 2) - (4 * A * C))) / (2 * A);
+	//x2 = (-B - (pow(B, 2) - (4 * A * C))) / (2 * A);
+	
 
 	//Print the Calc values of the roots to the user
 	printf_s("\n\nUsing\n A: %f\n B: %f\n C: %f\n D: %f\n Root1: %f\n Root2: %f", A, B, C, x3, x1, x2);
