@@ -3,11 +3,14 @@
 #include <stdlib.h>
 #include <RaspberryDLL.h>
 
+//New
+//Pedestrian Button = P2
+
 //Red -> Red & Yellow -> Green -> Yellow -> Red
 //Led 4 Green, 5 Yellow, 6 Red.
 
 //Green->Yellow->Red
-void RedLightTransition() { 
+void RedLightTransition() {
 	//Turns off green then turns on yellow and waits
 	ledOff(4);	//Green	 Off
 	ledOn(5);	//Yellow On
@@ -15,7 +18,7 @@ void RedLightTransition() {
 
 	ledOff(5);	//Yellow	Off
 	ledOn(6);	//Red		On
-	Wait(2000);	
+	Wait(2000);
 }
 
 //Red -> Red & Yellow -> Green
@@ -39,13 +42,18 @@ int main(void)
 
 	printf("Connected to Raspberry Pi\n");
 	
-	do { //Do while loop: Extra for testing
-		RedLightTransition();
-		Wait(3000);
-		GreenLightTransition();
-		Wait(3000);
-	} while (1);
+	
+	ledOn(4);
 
+	do { //Do while loop: Extra for testing
+		if (keyPressed(2) == true) {
+			RedLightTransition();
+			Wait(2000);	//Normally: 20,000 ms <=> 20 sec
+			GreenLightTransition();
+		}
+		
+	} while (true);
+	
 
 	return 0;
 }
