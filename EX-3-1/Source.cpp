@@ -13,11 +13,15 @@
 
 int main(void) {
 	
-	for (int i = 50; i >= 2; i--)
-	{
-		if (i % 2 == 0) {
-			printf_s("%d\n", i);
-		}
+	//for (int i = 50; i >= 2; i--)
+	//{
+	//	if (i % 2 == 0) {
+	//		printf_s("%d\n", i);
+	//	}
+	//}
+
+	for (int i = 50; i >= 2; i-=2) {
+		printf_s("%d\n", i);
 	}
 
 
