@@ -18,3 +18,5 @@
 *.exe
 *.pdb
 *x64
+*_IsIncrementalBuild
+*Release
