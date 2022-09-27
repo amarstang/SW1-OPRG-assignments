@@ -3,37 +3,37 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32825.248
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX1-0", "01-Exercises\EX1-0\EX1-0.vcxproj", "{34E0BAB2-8C44-47A2-BA2A-9474302782C4}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX1-1", "01-Exercises\EX1-1\EX1-1.vcxproj", "{387A371A-A4A0-4B2D-8510-0A02FEB97735}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX1-2", "01-Exercises\EX1-2\EX1-2.vcxproj", "{936530DC-460E-4285-8D4F-FD2496C843EC}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-2", "02-Exercises\EX2-2\EX2-2.vcxproj", "{2B744A2F-4686-403B-987C-0199F4C61AC8}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-3", "02-Exercises\EX2-3\EX2-3.vcxproj", "{F1E5D881-E666-40E3-BCF4-E9465D141DD3}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-4", "02-Exercises\EX2-4\EX2-4.vcxproj", "{3E3D690D-8FE8-4E02-BA3F-A58A36C467A8}" EndProject                                                              
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-5", "02-Exercises\EX2-5\EX2-5.vcxproj", "{FD6D9B81-9A18-4A7B-A243-66928F784824}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-6", "02-Exercises\EX2-6\EX2-6.vcxproj", "{EC85D58B-897C-4E8A-8AB3-27FA2D13F216}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-7", "02-Exercises\EX2-7\EX2-7.vcxproj", "{53834A94-DF7C-4978-8C44-ADD30A3F742F}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-1", "03-Exercises\EX3-1\EX3-1.vcxproj", "{79B0FD20-1F66-4F65-8F0E-B30BCF394A65}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-2", "03-Exercises\EX3-2\EX3-2.vcxproj", "{ACD4582C-06E5-4B22-A4BF-29E05C321840}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-3", "03-Exercises\EX3-3\EX3-3.vcxproj", "{79823A91-9996-47E6-BC18-0DB38C4A23A7}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-4", "03-Exercises\EX3-4\EX3-4.vcxproj", "{355A5899-65D8-4F8D-A8B9-818DBA564770}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-5", "03-Exercises\EX3-5\EX3-5.vcxproj", "{EFC28841-2BA2-48A3-96EE-E73EECD46340}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX4-1", "04-Exercises\EX4-1\EX4-1.vcxproj", "{3C88651B-153E-411B-B5BD-B0594C82BD56}" EndProject                                                               
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX4-2", "04-Exercises\EX4-2\EX4-2.vcxproj", "{9C49C55B-7352-40DA-B654-CC304FEFBE00}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX1-0", "Exercises-01\EX1-0\EX1-0.vcxproj", "{34E0BAB2-8C44-47A2-BA2A-9474302782C4}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX1-1", "Exercises-01\EX1-1\EX1-1.vcxproj", "{387A371A-A4A0-4B2D-8510-0A02FEB97735}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX1-2", "Exercises-01\EX1-2\EX1-2.vcxproj", "{936530DC-460E-4285-8D4F-FD2496C843EC}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-2", "Exercises-02\EX2-2\EX2-2.vcxproj", "{2B744A2F-4686-403B-987C-0199F4C61AC8}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-3", "Exercises-02\EX2-3\EX2-3.vcxproj", "{F1E5D881-E666-40E3-BCF4-E9465D141DD3}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-4", "Exercises-02\EX2-4\EX2-4.vcxproj", "{3E3D690D-8FE8-4E02-BA3F-A58A36C467A8}" EndProject                                                              
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-5", "Exercises-02\EX2-5\EX2-5.vcxproj", "{FD6D9B81-9A18-4A7B-A243-66928F784824}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-6", "Exercises-02\EX2-6\EX2-6.vcxproj", "{EC85D58B-897C-4E8A-8AB3-27FA2D13F216}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX2-7", "Exercises-02\EX2-7\EX2-7.vcxproj", "{53834A94-DF7C-4978-8C44-ADD30A3F742F}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-1", "Exercises-03\EX3-1\EX3-1.vcxproj", "{79B0FD20-1F66-4F65-8F0E-B30BCF394A65}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-2", "Exercises-03\EX3-2\EX3-2.vcxproj", "{ACD4582C-06E5-4B22-A4BF-29E05C321840}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-3", "Exercises-03\EX3-3\EX3-3.vcxproj", "{79823A91-9996-47E6-BC18-0DB38C4A23A7}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-4", "Exercises-03\EX3-4\EX3-4.vcxproj", "{355A5899-65D8-4F8D-A8B9-818DBA564770}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX3-5", "Exercises-03\EX3-5\EX3-5.vcxproj", "{EFC28841-2BA2-48A3-96EE-E73EECD46340}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX4-1", "Exercises-04\EX4-1\EX4-1.vcxproj", "{3C88651B-153E-411B-B5BD-B0594C82BD56}" EndProject                                                               
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "EX4-2", "Exercises-04\EX4-2\EX4-2.vcxproj", "{9C49C55B-7352-40DA-B654-CC304FEFBE00}" EndProject
 
 
 
 
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-1", "Home-EX-1-1\Home-EX-1-1.vcxproj", "{CFF5728C-05A8-4E32-9CF1-4C6FAC3172C5}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-2", "Home-EX-1-2\Home-EX-1-2.vcxproj", "{6CC86846-D878-4B34-AD78-8B6A89727D93}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-3", "Home-EX-1-3\Home-EX-1-3.vcxproj", "{0A008FBE-B461-4668-8C33-8C148542FDA2}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-4", "Home-EX-1-4\Home-EX-1-4.vcxproj", "{73AF309A-CB97-4829-BB4C-674A0F5D3DE5}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-5", "Home-EX-1-5\Home-EX-1-5.vcxproj", "{78EB3C59-1175-4375-A360-496A24CB1A4F}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-1", "Home-EX-2-1\Home-EX-2-1.vcxproj", "{DD51ABBF-3596-4C07-9AFE-87F810E9D238}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-2", "Home-EX-2-2\Home-EX-2-2.vcxproj", "{07E80CE3-92C6-4CE3-BCC5-823302701DE6}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-3", "Home-EX-2-3\Home-EX-2-3.vcxproj", "{F6115F54-AF89-457F-9D10-53AB68128C12}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-4", "Home-EX-2-4\Home-EX-2-4.vcxproj", "{912A9D9A-84AA-44F9-BECE-47F55BD90C69}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-5", "Home-EX-2-5\Home-EX-2-5.vcxproj", "{76BFAB57-47A3-4B63-AB37-E9B73986B4D7}" EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-6", "Home-EX-2-6\Home-EX-2-6.vcxproj", "{81B9FD55-B687-44BC-A785-DAECF0613CFF}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-1", "ExercisesHome-01\Home-EX-1-1\Home-EX-1-1.vcxproj", "{CFF5728C-05A8-4E32-9CF1-4C6FAC3172C5}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-2", "ExercisesHome-01\Home-EX-1-2\Home-EX-1-2.vcxproj", "{6CC86846-D878-4B34-AD78-8B6A89727D93}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-3", "ExercisesHome-01\Home-EX-1-3\Home-EX-1-3.vcxproj", "{0A008FBE-B461-4668-8C33-8C148542FDA2}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-4", "ExercisesHome-01\Home-EX-1-4\Home-EX-1-4.vcxproj", "{73AF309A-CB97-4829-BB4C-674A0F5D3DE5}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-1-5", "ExercisesHome-01\Home-EX-1-5\Home-EX-1-5.vcxproj", "{78EB3C59-1175-4375-A360-496A24CB1A4F}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-1", "ExercisesHome-02\Home-EX-2-1\Home-EX-2-1.vcxproj", "{DD51ABBF-3596-4C07-9AFE-87F810E9D238}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-2", "ExercisesHome-02\Home-EX-2-2\Home-EX-2-2.vcxproj", "{07E80CE3-92C6-4CE3-BCC5-823302701DE6}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-3", "ExercisesHome-02\Home-EX-2-3\Home-EX-2-3.vcxproj", "{F6115F54-AF89-457F-9D10-53AB68128C12}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-4", "ExercisesHome-02\Home-EX-2-4\Home-EX-2-4.vcxproj", "{912A9D9A-84AA-44F9-BECE-47F55BD90C69}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-5", "ExercisesHome-02\Home-EX-2-5\Home-EX-2-5.vcxproj", "{76BFAB57-47A3-4B63-AB37-E9B73986B4D7}" EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Home-EX-2-6", "ExercisesHome-02\Home-EX-2-6\Home-EX-2-6.vcxproj", "{81B9FD55-B687-44BC-A785-DAECF0613CFF}" EndProject
 
 
 
