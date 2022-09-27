@@ -31,73 +31,82 @@ void GreenLightTransition(int waitTime) {
 	Wait(waitTime);
 }
 
+char Iteration1DayMode(){
+	do { //Do while loop: Extra for testing
+
+		RedLightTransition(1000);
+		Wait(3000);
+		GreenLightTransition(1000);
+		Wait(3000);
+
+	} while (!_kbhit());
+
+	return _getch();
+}
+
+char Iteration2WeekendMode(){
+	do {
+		GreenLightTransition(1000);
+
+		if (keyPressed(2) == true || getIntensity() <= 50) {//Want getIntensity() to be low, as it means a object is between the sensor and light source
+			RedLightTransition(1000);
+			Wait(2000);
+			GreenLightTransition(1000);
+		}
+
+		if (_kbhit())
+			break;
+
+
+	} while (!_kbhit());
+
+	return _getch();
+}
+
+
+
+
 int main(void)
 {
+	//Makes the raspberry pie work
 	if (!Open())
-	{
-		printf("Error with connection\n");
 		exit(1);
-	}
+	//the magic
 
-	printf("Connected to Raspberry Pi\n");
+	printf_s("What mode do you want: Daytime 1, Evening/Weekend 2, Shutdown 3\nPress the Corosponding number and enter: ");
+
+InvalidInput://For invalid inputs *(not needed)
 
 	char trafficState;
-	bool firstRunCase2 = true;
-
-	printf("\n\nWhat mode do you want: Daytime 1, Evening/Weekend 2, Shutdown 3\nPress the Corosponding number and enter: ");
-
-	_kbhit();
 	trafficState = _getch();
 
-	while (trafficState == '3') {
-		firstRunCase2 = true;
+	do
+	{
+		system("cls");
+		printf("What mode do you want: Daytime 1, Evening/Weekend 2, Shutdown 3\n");
 
 		switch (trafficState) {
-
 		case '1':
-			while (!_kbhit()) {
-				RedLightTransition(2000);
-				Wait(5000);
-				GreenLightTransition(2000);
-				Wait(5000);
-			}
-			trafficState = _getch();
+			printf_s("\nCurrently: Day mode\nPress the 1, 2 or 3 to change: ");
+			trafficState = Iteration1DayMode();
 			break;
 
 		case '2':
-			while (!_kbhit()) {
-
-				if (firstRunCase2 == true) {
-					RedLightTransition(0);
-					GreenLightTransition(0);
-					firstRunCase2 = false;
-				}
-
-
-				if (keyPressed(2) == true || getIntensity() <= 50) {
-					RedLightTransition(2000);
-					Wait(5000);
-					GreenLightTransition(2000);
-				}
-			}
-			trafficState = _getch();
+			printf_s("\nCurrently: Weekend mode\nPress the 1, 2 or 3 to change: ");
+			trafficState = Iteration2WeekendMode();
 			break;
 
-		case '3': //should only need to turn LED 4 off, but if the case changes mid way It could be wiered
-			ledOff(4);
+		case '3':
 			ledOff(5);
 			ledOff(6);
+			ledOff(4);
 			return 0;
 
-		default:
+		default://For invalid inputs *(not needed)
 			printf_s("You made a mistake, trying to press: 1, 2 or 3\nTry again: ");
-			_kbhit();
-			trafficState = _getch();
-			break;
+			goto InvalidInput; //to get out of the while loop and reset the variables
 		}
-	}
-
-
-
+			
+	} while (true);
 	return 0;
 }
