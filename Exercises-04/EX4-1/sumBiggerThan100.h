@@ -1,7 +1,9 @@
-#ifndef SUMBIGGERTHAN100
-#define SUMBIGGERTHAN100
 #include <stdio.h>
 #include <math.h>
+
+#ifndef SUMBIGGERTHAN100
+#define SUMBIGGERTHAN100
+
 
 //Exercise 4.1 - a
 //int sumBiggerThan100(float n1, float n2);
