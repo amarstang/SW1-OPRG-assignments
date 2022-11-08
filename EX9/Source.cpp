@@ -6,12 +6,8 @@
 //Determens if the car door is locked
 int checkKey1();
 
-//Checkes if the door is open (on = open, off = closed)
-//int checkSwitch();
-
 //Checks the fotosensor gives int 0-100
 int checkFotoSensor();
-
 
 //Controels the LEDs. LED 6 red and LED 5 green
 void alarmOnLed();
@@ -25,30 +21,37 @@ int main(void) {
 		exit(1);
 	}
 
-	int lockedDoor = 0;
+	bool carLockState = false;
 
-
-	while (true) {
-		while (keyPressed == 0) {
-			if (lockedDoor == 0) {
+	while (true){
+		while (keyPressed(1) == 0) { //While the key is not pressed. 0 = pressed, 1 = not pressed
+			printf_s("%d \n", carLockState);
+			if (carLockState == false) {
 				alarmOffLed();
 			}
-			else if (switchOn() == 1 && lockedDoor == 1 || checkFotoSensor() >= 30 && lockedDoor == 1) {
-				alarmTriggeredled();
-			}
-			else if (switchOn() == 0 && checkFotoSensor() < 30 && lockedDoor == 1) {
+			else if (carLockState == true && switchOn() == 0 && getIntensity() >= 60) { //SwitchO: 0 = On, 1 = Off... fotosensor gives int 0-100 as %
 				alarmOnLed();
 			}
+			else {
+				alarmTriggeredled();
+			}
 		}
-		lockedDoor = checkKey1(lockedDoor);
+		carLockState = !carLockState;
+		Wait(1000);
 	}
 	return 0;
 }
 
 void alarmOffLed() {
-	ledOff(5);
-	Wait(500);
-	ledOn(5);
+	for (int i = 5; i >= 3; i--) {
+		ledOn(i);
+	}
+
+	Wait(1000);
+
+	for (int i = 5; i >= 3; i--) {
+		ledOff(i);
+	}
 }
 
 void alarmOnLed() {
@@ -67,21 +70,3 @@ void alarmTriggeredled() {
 		ledOff(i);
 	}
 }
-
-int checkFotoSensor() {
-	return getIntensity();
-}
-
-
-int checkKey1(int key) {
-	if (1){
-		return 0;
-	}
-	else {
-		return 1;
-	}
-}
-
-//int checkSwitch() {
-//	return switchOn();
-//}
