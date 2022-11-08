@@ -5,34 +5,36 @@
 
 void printValues(double temp[],int light[]);
 
+#define WaitTimeMS 5000
+#define ArrSize 60000/WaitTimeMS
 
 int main(void)
 {
 	if (!Open()) { printf("Error with connection\n"); exit(1); }
 
-	int lightArr[12];
-	double tempArr[12];
-
+	int lightArr[ArrSize];
+	double tempArr[ArrSize];
+	int minuteCounter = 1;
 
 	while (true) {
 
-		for (int i = 0; i < 12; i++){
+		for (int i = 0; i <= ArrSize; i++){
 			lightArr[i] = getIntensity();
 			tempArr[i] = getTemperature();
-			Wait(5000);
+			Wait(WaitTimeMS);
 		}
+		printf_s("%d\n", minuteCounter);
 		printValues(tempArr, lightArr);
+		minuteCounter++;
 	}
-
-
 	return 0;
 }
 
 
 void printValues(double temp[], int light[]) {
-	size_t n = sizeof(light) / sizeof(light[0]);
-
-	for (int i = 0; i < n; i++){
-		printf_s("light: %d | temp: %f", light[i], temp[i]);
+	for (int i = 0; i <= ArrSize; i++){
+		printf_s("light: %d | temp: %f\n", light[i], temp[i]);
 	}
+	printf_s("\n");
+
 }
