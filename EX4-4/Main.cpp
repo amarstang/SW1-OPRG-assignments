@@ -11,10 +11,11 @@ int main(void)
 		printf("Error with connection\n");exit(1);
 	}
 
-	void BlinkSequence1();
+	while (true){
+		BlinkSequence1();
 
-	void BlinkSequence2();
-
-
+		BlinkSequence2();
+	}
+	
 	return 0;
 }
