@@ -14,7 +14,6 @@ void alarmOnLed();
 void alarmOffLed();
 void alarmTriggeredled();
 
-
 int main(void) {
 	if (!Open()){
 		printf("Error with connection\n");
@@ -25,7 +24,7 @@ int main(void) {
 
 	while (true){
 		while (keyPressed(1) == 0) { //While the key is not pressed. 0 = pressed, 1 = not pressed
-			printf_s("%d \n", carLockState);
+			
 			if (carLockState == false) {
 				alarmOffLed();
 			}
@@ -37,6 +36,14 @@ int main(void) {
 			}
 		}
 		carLockState = !carLockState;
+
+		if (carLockState == false){
+			printf_s("car unlocked: %d\n", carLockState);
+		}
+		else{
+			printf_s("car locked:   %d\n", carLockState);
+		}
+		
 		Wait(1000);
 	}
 	return 0;
